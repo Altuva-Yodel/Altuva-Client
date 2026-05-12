@@ -22,7 +22,7 @@ jobs:
       - name: ⚙️ Create .env
         run: |
           echo "VITE_RAZORPAY_KEY_ID=rzp_test_SdgABcswEEFn48" >> .env
-          echo "VITE_API_BASE_URL=https://unprotecting-unmelodically-venita.ngrok-free.dev" >> .env
+          echo "VITE_API_BASE_URL=https://altuva-server-zm01.onrender.com" >> .env
 
       - name: 📦 Install Dependencies
         run: npm i
