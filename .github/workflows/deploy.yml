@@ -39,5 +39,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: "dist/**"
           target: "/home/bhrtkswd/altuva.co.in"
-          strip_components: 2
+          strip_components: 1
           rm: true # Remove files in target directory before copying
