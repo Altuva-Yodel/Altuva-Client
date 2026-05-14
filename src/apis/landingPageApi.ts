@@ -85,6 +85,20 @@ export const getShowcaseTea = async (): Promise<ApiResponse<ShowcaseTeaData>> =>
     return response.data;
 };
 
+export interface TestimonialItem {
+    id: number;
+    quote: string;
+    person_name: string;
+    designation: string | null;
+    sort_order: number;
+    avatar_url: string | null;
+}
+
+export const getTestimonials = async (): Promise<ApiResponse<TestimonialItem[]>> => {
+    const response = await apiClient.get<ApiResponse<TestimonialItem[]>>('/public/happy-customers');
+    return response.data;
+};
+
 export interface ProductQueryParams {
     search?: string;
     category?: string;

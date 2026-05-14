@@ -80,12 +80,12 @@ const PopularSection = () => {
                                                 if (!product) return null
                                                 const qty = getQty(product.id)
                                                 return (
-                                                    <div key={i} className="flex flex-col gap-2 min-w-1/2">
+                                                    <div key={i} className="flex flex-col gap-2 w-1/2">
                                                         <div
-                                                            className="h-auto rounded-3xl overflow-hidden cursor-pointer"
+                                                            className="aspect-square rounded-3xl overflow-hidden cursor-pointer"
                                                             onClick={() => navigate(`/product/${product.slug}`)}
                                                         >
-                                                            <img src={product.primary_image} alt={product.name} className="w-full" />
+                                                            <img src={product.primary_image} alt={product.name} className="w-full h-full object-cover" />
                                                         </div>
 
                                                         {qty > 0 ? (
