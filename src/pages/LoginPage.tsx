@@ -3,7 +3,6 @@ import type { FormEvent } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import useCustomerStore from '../stores/customerStore';
 import useCartStore from '../stores/cartStore';
-import Navbar from '../components/basic/Navbar';
 import MapSection from '../components/basic/MapSection';
 import Footer from '../components/basic/Footer';
 
