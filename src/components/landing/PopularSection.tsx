@@ -37,8 +37,8 @@ const PopularSection = () => {
         <>
             {showLoginModal && <LoginPromptModal onClose={() => setShowLoginModal(false)} redirectAfter="/" />}
 
-            <div className="flex justify-center p-6">
-                <div className="relative flex max-w-8xl bg-[#F7FF83] mt-10 rounded-xl overflow-hidden">
+            <div className="flex justify-center p-4">
+                <div className="relative flex max-w-7xl bg-[#F7FF83] mt-10 rounded-md overflow-hidden">
                     <div className="relative flex w-full max-w-[1440px] mx-auto bg-[#F7FF83] overflow-hidden">
                         <div className="flex flex-col py-10 px-10 w-full">
 

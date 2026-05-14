@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 
 export default function HomePromoBento() {
     return (
-        <section className="w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+        <section className="w-full max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 rounded-md overflow-hidden">
 
                 {bentoItems.map((item) => (
                     <div

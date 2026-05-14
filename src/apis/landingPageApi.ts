@@ -59,6 +59,32 @@ export const getPopularSections = async (): Promise<ApiResponse<PopularSectionIt
     return response.data;
 };
 
+export interface ShowcaseTeaTag {
+    id: number;
+    name: string;
+    sort_order: number;
+}
+
+export interface ShowcaseTeaProduct {
+    id: number;
+    name: string;
+    image_url: string;
+    tag_id: number;
+    product_id: number;
+    sort_order: number;
+    slug: string | null;
+}
+
+export interface ShowcaseTeaData {
+    tags: ShowcaseTeaTag[];
+    products: ShowcaseTeaProduct[];
+}
+
+export const getShowcaseTea = async (): Promise<ApiResponse<ShowcaseTeaData>> => {
+    const response = await apiClient.get<ApiResponse<ShowcaseTeaData>>('/public/showcase-tea');
+    return response.data;
+};
+
 export interface ProductQueryParams {
     search?: string;
     category?: string;
